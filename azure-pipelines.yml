@@ -32,3 +32,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Windows Azure MSDN - Visual Studio Ultimate(08a3708b-77d2-4e81-ba2e-740a6ae6acd3)'
+    appType: 'webApp'
+    WebAppName: 'wolfgang-app'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
