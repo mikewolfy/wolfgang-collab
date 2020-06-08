@@ -8,6 +8,7 @@ body {
   border: 0;
   padding: 0;
   background-color: #fff;
+  background: linear-gradient(to left, #c0f0cd, #9198e5);
 }
 
 main {
